@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Optimized Image with &lt;picture&gt;</title>
+</head>
+
+<body>
+
+    <h2>&lt;picture&gt; — Optimized Responsive Image</h2>
+
+    <picture>
+        <!-- For devices wider than 800px (e.g., desktop) -->
+        <source media="(min-width: 800px)" srcset="h-large.webp" type="image/webp">
+        <source media="(min-width: 800px)" srcset="h-large.jpg" type="image/jpeg">
+
+        <!-- For devices between 500px and 800px (e.g., tablets) -->
+        <source media="(min-width: 500px)" srcset="h-medium.webp" type="image/webp">
+        <source media="(min-width: 500px)" srcset="h-medium.jpg" type="image/jpeg">
+
+        <!-- For smaller screens (e.g., mobile) -->
+        <source media="(max-width: 499px)" srcset="h-small.webp" type="image/webp">
+        <source media="(max-width: 499px)" srcset="h-small.jpg" type="image/jpeg">
+        <picture>
+            <source media="(min-width: 500px)" srcset="h.png" type="image/png">
+            <img src="h.png" alt="Optimized image of h.png" width="100%">
+        </picture>
+
+        <!-- Fallback image if nothing matches -->
+        <img src="h.jpg" alt="Optimized image of h.png" width="100%">
+    </picture>
+
+    <hr>
+
+</body>
+
+</html>
