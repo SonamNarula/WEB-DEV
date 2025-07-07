@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Map Example</title>
+</head>
+
+<body>
+
+    <h2>&lt;map&gt; and &lt;area&gt; — Image Map Example</h2>
+
+    <!-- Image with usemap -->
+    <img src="h.png" alt="My Image" usemap="#mymap" width="400">
+
+    <!-- Map definition -->
+    <map name="mymap">
+        <!-- Rectangle: shape="rect", coords="x1,y1,x2,y2" -->
+        <area shape="rect" coords="30,30,150,150" href="https://github.com/SonamNarula" alt="GitHub" target="_blank">
+
+        <!-- Circle: shape="circle", coords="x,y,radius" -->
+        <area shape="circle" coords="250,100,50" href="mailto:sonamnarula2108@gmail.com" alt="Email">
+
+        <!-- Polygon: shape="poly", coords="x1,y1,x2,y2,x3,y3..." -->
+        <area shape="poly" coords="300,200,350,250,320,300,280,270"
+            href="https://www.linkedin.com/in/sonam-narula-402a60285/" alt="LinkedIn" target="_blank">
+    </map>
+
+    <hr>
+
+</body>
+
+</html>
